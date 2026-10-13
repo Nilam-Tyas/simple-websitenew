@@ -15,4 +15,26 @@
       <div style="float:center; text-align:center;">
       <img src="img/427a5dcf46270d220b5238de4546786d.jpg" width="300" alt="Choi Woo Shik">
       <p>Hello, Choi Woo Shik here!</p>
+  <hr>
+        <details style="margin-top: 20px; text-align: left; display: inline-block;">
+        <summary style="font-weight: bold; cursor: pointer; padding: 5px; background: #eee; border-radius: 4px;">Klik untuk Lihat Flowchart & Canvas Data</summary>
+        
+        <div style="margin-top: 15px; padding: 10px; border: 1px solid #ccc;">
+            <h3>Flowchart (Mermaid)</h3>
+    <script type="module">
+                import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+                mermaid.initialize({ startOnLoad: true });
+            </script>
+    <div class="mermaid">
+                graph TD
+                    A[Begin] --> B[Input 1]
+                    B --> C[Input 2]
+                    C --> D[Process]
+            </div>
+
+            <h3 style="margin-top: 20px;">Canvas (Shape & Raw Data)</h3>
+          <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000; background:#fff;"></canvas>
+          <p style="font-family: monospace; font-size: 13px;">Raw Data: {"status": "active", "node": "ESP32", "value": 90}</p>
+        </div>
+    </details>
 </html>
